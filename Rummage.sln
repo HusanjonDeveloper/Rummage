@@ -5,7 +5,9 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rummage.Api", "Rummage.Api\Rummage.Api.csproj", "{C76F2BA5-55E8-405B-9742-A340ED054189}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rummage.Api.Tests.Unit", "Rummage.Api.Tests.Unit\Rummage.Api.Tests.Unit.csproj", "{68F5F2F9-2F7B-44AD-BFA5-CF8EC102D3A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rummage.Api.Tests.Unit", "Rummage.Api.Tests.Unit\Rummage.Api.Tests.Unit.csproj", "{68F5F2F9-2F7B-44AD-BFA5-CF8EC102D3A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rummage.Api.Infrasturucture.Build", "Rummage.Api.Infrasturucture.Build\Rummage.Api.Infrasturucture.Build.csproj", "{480DAE84-A515-422D-8658-E84E08038373}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{68F5F2F9-2F7B-44AD-BFA5-CF8EC102D3A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{68F5F2F9-2F7B-44AD-BFA5-CF8EC102D3A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{68F5F2F9-2F7B-44AD-BFA5-CF8EC102D3A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{480DAE84-A515-422D-8658-E84E08038373}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{480DAE84-A515-422D-8658-E84E08038373}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{480DAE84-A515-422D-8658-E84E08038373}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{480DAE84-A515-422D-8658-E84E08038373}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
