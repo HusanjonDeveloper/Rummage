@@ -1,0 +1,25 @@
+name: Runname
+on:
+  push:
+    branches:
+    - Master
+  pull_request:
+    branches:
+    - Master
+jobs:
+  build:
+    runs-on: windows-2022
+    steps:
+    - name: Checking out code
+      uses: actions/checkout@v2
+    - name: Sting up .Net
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 6.0.406
+        include-prerelease: false
+    - name: Restoring Nuget Paskages
+      run: dotnet restore
+    - name: Building  Project
+      run: dotnet build --no-restore
+    - name: Running Tests
+      run: dotnet test --no-build --verbosity normal
