@@ -11,7 +11,7 @@ namespace Rummage.Api.Tests.Unit
     {
         [Fact]
 
-        public void ShouldBeSuccsesFull=>  Assert.True (true);
+        public void ShouldBeTrue ()=>  Assert.True (true);
     }
 
 }
