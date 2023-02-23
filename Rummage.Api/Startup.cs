@@ -9,6 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using Rummage.Api.Broker.Storages;
 
 namespace Rummage.Api
 {
@@ -27,6 +28,7 @@ namespace Rummage.Api
                 Version = "v1"
             };
 
+            services.AddDbContext<StorageBroker>();
             services.AddControllers();
 
             services.AddSwaggerGen(operations =>
