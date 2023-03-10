@@ -1,25 +1,25 @@
-name: Runname
+name: 'Build & Test CshOverflow '
 on:
   push:
     branches:
-    - Master
+    - main
   pull_request:
     branches:
-    - Master
+    - main
 jobs:
   build:
-    runs-on: windows-2022
+    runs-on: windows-latest
     steps:
-    - name: Checking out code
+    - name: Chesking out
       uses: actions/checkout@v2
-    - name: Sting up .Net
+    - name: Instaling .Net
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: 6.0.406
+        dotnet-version: 7.0.200
         include-prerelease: false
-    - name: Restoring Nuget Paskages
+    - name: Restoring paskage
       run: dotnet restore
-    - name: Building  Project
+    - name: Building Project
       run: dotnet build --no-restore
-    - name: Running Tests
+    - name: Testing Project
       run: dotnet test --no-build --verbosity normal
