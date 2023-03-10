@@ -9,7 +9,7 @@ using Microsoft.Extensions.Configuration;
 
 namespace Rummage.Api.Broker.Storages
 {
-    public partial class StorageBroker : EFxceptionsContext
+    public partial class StorageBroker : EFxceptionsContext , IStorageBroker
     {
         public IConfiguration configuration;
 
