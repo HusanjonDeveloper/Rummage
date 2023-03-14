@@ -3,7 +3,7 @@
 // Free To Use Comfort and Pease
 //==================================================
 
-namespace Rummage.Api.Controllers.Models.Foundetions.Guests
+namespace Rummage.Api.Core.Entities.Enums
 {
     public enum GenderType
     {
