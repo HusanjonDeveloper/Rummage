@@ -4,8 +4,7 @@
 //==================================================
 
 using System;
-
-using Rummage.Api.Controllers.Models.Foundetions.Guests;
+using Rummage.Api.Core.Entities.Enums;
 
 namespace Rummage.Api.Controllers.Models.Foundetions
 {
